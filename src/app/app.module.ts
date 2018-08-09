@@ -11,6 +11,9 @@ import { Module4part2Component } from './module4/module4part1/module4part2/modul
 import { Module5part1Component } from './module5/module5part1/module5part1.component';
 import { Module5part2Component } from './module5/module5part1/module5part2/module5part2.component';
 import { Module5part3Component } from './module5/module5part1/module5part2/module5part3/module5part3.component';
+import { Module6child1Component } from './module6/module6parent/module6child1/module6child1.component';
+import { Module6child2Component } from './module6/module6parent/module6child2/module6child2.component';
+import { Module6parentComponent } from './module6/module6parent/module6parent.component';
 
 
 
@@ -25,14 +28,18 @@ import { Module5part3Component } from './module5/module5part1/module5part2/modul
     Module4part2Component,
     Module5part1Component,
     Module5part2Component,
-    Module5part3Component
+    Module5part3Component,
+    Module6parentComponent,
+    Module6child1Component,
+    Module6child2Component
+    
   
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [Module6child1Component],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
